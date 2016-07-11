@@ -1,0 +1,15 @@
+<p>
+  <strong>Name:</strong>
+  <%= @curiosity.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @curiosity.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@curiosity.image_url, :width => 600) if @curiosity.image_url.present? %>
+</p>
+
